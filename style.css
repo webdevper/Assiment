@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* background: #fff; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    height: 60px;
+    justify-content: space-between;
+    border-bottom: 4px solid #00000026;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+cursor: pointer;
+}
+
+.home-page img {
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 40px;
+    font-size: 28px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-item {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #F2F2F4;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #8F4FB6;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.grid-item svg{
+    transition: all 0.3s ease-in-out;
+
+}
+.grid-item:hover svg{
+    transform: scale(1.4);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+transition: all 0.3s ease-in-out;
+}
+.grid-item img:hover{
+    transform: scale(1.2);
+}
+.intro img {
+    width: 100%;
+}
+
+.join-us {
+    position: relative;
+}
+
+
+.join-us div .join-text {
+    background-color: #F2F2F4;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: left;
+    margin: 200px 0;
+}
+
+.join-us div .join-text h3 {
+    text-align: center;
+    line-height: 2;
+    font-size: 40px;
+    color: rgb(255, 60, 49);
+}
+
+.join-us div .join-text p {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.join-us .detail {
+    padding: 30px;
+    position: absolute;
+    width: 300px;
+    height: 430px;
+    top: -85px;
+    right: 100px;
+    background-color: #8F4FB6;
+    border-radius: 20px;
+}
+
+.join-us .detail h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.join-us .detail .deat-input {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-us .detail input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+}
+
+
+.join-us .detail .deat-input button {
+    height: 40px;
+    width: 60%;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.review{
+    margin: 10px 100px;
+}
+.review h3{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+
+}
+.review-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.review-box .box{
+    width: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -1px black;
+
+}
+.review-box .box img{
+    height: 20px;
+}
+.blog {
+    margin: 40px;
+}
+.blog h2{
+    text-align: center;
+    margin-top: 90px;
+}
+.blog img{
+    width: 100%;
+}
+
+footer{
+position: relative;
+}
+footer .line{
+    height: 1px;
+    background-color: rgb(226, 226, 226);
+}
+footer .tpv{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 232px;
+    font-weight: bolder;
+    color: rgb(209 208 208 / 24%);
+    z-index: -1;
+}
+footer .ftr-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 10%;
+}
+footer .ftr1{
+    display: flex;
+    flex-direction: column;
+} 
+footer .ftr1 p{
+    text-align: justify;
+}
+footer .ftr2{
+    display: flex;
+    flex-direction: row;
+
+} 
+footer .footer-dtl{
+    margin: 20px;
+    width: 150px;
+}
+footer .footer-dtl h3{
+    margin-bottom: 40px;
+}
+footer .footer-dtl li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 0;
+}
+footer div img{
+    width: 300px;
+}
+
+footer p{
+    text-align: center;
+margin: 20px;
+}
